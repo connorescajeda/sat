@@ -5,7 +5,7 @@ This file should work correctly in both Python 2.7 and Python 3.2.
 """
 
 from pyhop_anytime import pyhop
-from pyhop_anytime.pyhop import TaskList
+from pyhop_anytime import TaskList
 
 """Each Pyhop planning operator is a Python function. The 1st argument is
 the current state, and the others are the planning operator's usual arguments.

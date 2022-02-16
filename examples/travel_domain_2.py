@@ -1,7 +1,7 @@
 import unittest
 
 from pyhop_anytime import pyhop
-from pyhop_anytime.pyhop import TaskList
+from pyhop_anytime import TaskList
 
 
 def go(state, entity, start, end):

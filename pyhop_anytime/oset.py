@@ -9,6 +9,8 @@ class Oset:
                 self.add(item)
 
     def __eq__(self, other):
+        print(self.items)
+        print(other.items)
         return self.items == other.items
 
     def __repr__(self):
