@@ -1,0 +1,16 @@
+from pyhop_anytime import *
+global state, goals
+state = State('state')
+state.calibration_target = Oset([('instrument0','groundstation0'),('instrument1','star3'),('instrument10','groundstation0'),('instrument11','groundstation0'),('instrument12','star1'),('instrument13','star3'),('instrument14','groundstation2'),('instrument15','groundstation0'),('instrument16','groundstation2'),('instrument17','star1'),('instrument18','star4'),('instrument2','star4'),('instrument3','groundstation2'),('instrument4','star1'),('instrument5','groundstation2'),('instrument6','groundstation2'),('instrument7','star3'),('instrument8','groundstation2'),('instrument9','star3')])
+state.on_board = Oset([('instrument0','satellite0'),('instrument1','satellite0'),('instrument10','satellite5'),('instrument11','satellite5'),('instrument12','satellite5'),('instrument13','satellite6'),('instrument14','satellite6'),('instrument15','satellite6'),('instrument16','satellite7'),('instrument17','satellite7'),('instrument18','satellite7'),('instrument2','satellite1'),('instrument3','satellite1'),('instrument4','satellite2'),('instrument5','satellite2'),('instrument6','satellite3'),('instrument7','satellite4'),('instrument8','satellite4'),('instrument9','satellite4')])
+state.pointing = Oset([('satellite0','star19'),('satellite1','star18'),('satellite2','star19'),('satellite3','star4'),('satellite4','phenomenon9'),('satellite5','planet6'),('satellite6','planet17'),('satellite7','planet11')])
+state.power_avail = Oset(['satellite0','satellite1','satellite2','satellite3','satellite4','satellite5','satellite6','satellite7'])
+state.supports = Oset([('instrument0','image1'),('instrument0','thermograph4'),('instrument1','spectrograph2'),('instrument1','thermograph3'),('instrument10','infrared0'),('instrument10','spectrograph2'),('instrument10','thermograph4'),('instrument11','infrared0'),('instrument12','infrared0'),('instrument13','infrared0'),('instrument13','thermograph3'),('instrument14','spectrograph2'),('instrument15','thermograph4'),('instrument16','thermograph4'),('instrument17','spectrograph2'),('instrument18','thermograph4'),('instrument2','spectrograph2'),('instrument3','image1'),('instrument3','spectrograph2'),('instrument4','spectrograph2'),('instrument4','thermograph3'),('instrument4','thermograph4'),('instrument5','image1'),('instrument5','infrared0'),('instrument5','thermograph3'),('instrument6','infrared0'),('instrument6','spectrograph2'),('instrument7','spectrograph2'),('instrument7','thermograph3'),('instrument8','image1'),('instrument9','infrared0')])
+state.calibrated = Oset()
+state.have_image = Oset()
+state.power_on = Oset()
+
+goals = State('goals')
+goals.have_image = Oset([('phenomenon10','image1'),('phenomenon16','image1'),('phenomenon5','spectrograph2'),('phenomenon9','infrared0'),('planet11','image1'),('planet14','thermograph4'),('planet17','thermograph3'),('planet20','image1'),('planet21','infrared0'),('planet22','image1'),('planet23','thermograph3'),('planet24','infrared0'),('planet6','spectrograph2'),('planet7','infrared0'),('star12','thermograph3'),('star13','thermograph3'),('star15','thermograph4'),('star18','image1')])
+goals.pointing = Oset([('satellite0','star19'),('satellite1','planet22'),('satellite2','star13'),('satellite3','planet14'),('satellite5','planet24'),('satellite7','star3')])
+
